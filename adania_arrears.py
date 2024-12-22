@@ -17,6 +17,7 @@ sheet_name='Al008-67 Ezcaba'
 extract_promotion = pd.read_excel(promotion_file, dtype=str)
 
 # Filter the promotion data based on the input promotion
+# 
 filtered_data = extract_promotion[extract_promotion["Promotion path"] == input_promotion].copy()
 
 # Extract relevant columns and rename 'Promotion' to 'Promotion Name'
