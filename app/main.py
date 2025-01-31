@@ -110,7 +110,7 @@ async def forgot_password(request: PasswordResetRequest):
     user = next((u for u in fake_db['users'] if u['email'] == request.email), None)
     if not user:
         raise HTTPException(status_code=404, detail="Email not found")
-    return {"message": "Password reset email sent"}  # In practice, send an actual email.
+    return {"message": "Password reset email sent"}  
 
 @app.post("/change-password")
 async def change_password(username: str, password_data: PasswordChange):
