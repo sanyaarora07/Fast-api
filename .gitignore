@@ -1,0 +1,31 @@
+# Python-related
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.env
+.venv/
+venv/
+Pipfile
+Pipfile.lock
+
+# FastAPI / Uvicorn / Pydantic
+*.log
+*.db
+*.sqlite3
+instance/
+config.json
+
+# Virtual environment
+.env
+*.env
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Mac / Linux / Windows
+.DS_Store
+Thumbs.db
